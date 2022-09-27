@@ -2,11 +2,10 @@
 
 /**
  * _strstr - locates a substring
- * 
- * @haystack: the longer string to search
- * @needle: the first occurrence of the substring
+ * @haystack: string in which to check for needle
+ * @needle: substring to find in haystack
  *
- * Return: a pointer beg of substring or @Null if it not foound.
+ * Return: pointer to beginning of needle in haystack or NULL if no match
  */
 char *_strstr(char *haystack, char *needle)
 {
