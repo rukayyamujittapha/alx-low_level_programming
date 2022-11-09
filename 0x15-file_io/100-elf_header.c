@@ -74,21 +74,21 @@ void print_magic(unsigned char *e_ident)
  */
 void print_class(unsigned char *e_ident)
 {
-	printf("  Class:
+	printf("  Class:                             ");
 
 	switch (e_ident[EI_CLASS])
 	{
 	case ELFCLASSNONE:
-	        printf("none\n");
+		printf("none\n");
 		break;
 	case ELFCLASS32:
-	        printf("ELF32\n");
+		printf("ELF32\n");
 		break;
 	case ELFCLASS64:
-	        printf("ELF64\n");
+		printf("ELF64\n");
 		break;
 	default:
-	        printf("<unknown: %x>\n", e_ident[EI_CLASS]);
+		printf("<unknown: %x>\n", e_ident[EI_CLASS]);
 	}
 }
 
@@ -123,7 +123,7 @@ void print_data(unsigned char *e_ident)
 void print_version(unsigned char *e_ident)
 {
 	printf("  Version:                           %d",
-		e_ident[EI_VERSION]);
+	       e_ident[EI_VERSION]);
 
 	switch (e_ident[EI_VERSION])
 	{
